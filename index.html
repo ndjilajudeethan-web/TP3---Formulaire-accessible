@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr-CA">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Commander une brochure gratuite</title>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <h1>FORMAT DE LA BROCHURE</h1>
+            <div class="champ ctnValidation">
+                <div class="champ__conteneur">
+                    <label class="champ__etiquette" for="format">Format</label>
+                <button class="champ--format" id="format-imprimé" name="format" type="button">imprimé</button>
+                <button class="champ--format" id="format-pdf" name="format" type="button">PDF</button>
+                <button class="champ--format" id="format-epub" name="format" type="button">ePub</button>
+            </div>
+            <h2>INFORMATIONS DE CONTACT</h2>
+            <div class="champ ctnValidation">
+                <div class="champ__conteneur">
+                    <label class="champ__etiquette" for="Prenom">Prénom</label>
+                    <input
+                        class="champ--prenom"
+                        id="Prenom"
+                        name="Prenom"
+                        type="text"
+                        required
+                    />
+                </div>
+                <p class="champ__erreur erreur"></p>
+            </div>
+            <div class="champ ctnValidation">
+                <div class="champ__conteneur">
+                    <label class="champ__etiquette" for="Nom">Nom</label>
+                    <input
+                        class="champ--nom"
+                        id="Nom"
+                        name="Nom"
+                        type="text"
+                        required
+                    />
+                </div>
+                <p class="champ__erreur erreur"></p>
+            </div>
+            <div class="champ ctnValidation">
+                <div class="champ__conteneur">
+                    <label class="champ__etiquette" for="courriel">Courriel</label>
+                    <input
+                        class="champ--courriel"
+                        id="courriel"
+                        name="courriel"
+                        type="email"
+                        required
+                    />
+                </div>
+                <p class="champ__erreur erreur"></p>
+            </div>
+            <div class="champ ctnValidation">
+                <div class="champ__conteneur">
+                    <label class="champ__etiquette" for="telephone">Téléphone</label>
+                    <input
+                        class="champ--telephone"
+                        id="telephone"
+                        name="telephone"
+                        type="tel"
+                        required
+                    />
+                </div>
+                <p class="champ__erreur erreur"></p>
+            </div>
+            <h1>INFORMATIONS POSTALES</h1>
+            <div class="champ ctnValidation">
+  <div class="champ__conteneur">
+    <label class="champ__etiquette" for="adresse">Adresse</label>
+    <input
+      class="champ--adresse"
+      id="adresse"
+      name="adresse"
+      type="text"
+      required
+    />
+  </div>
+  <p class="champ__erreur erreur"></p>
+</div>
+<div class="champ ctnValidation">
+  <div class="champ__conteneur">
+    <label class="champ__etiquette" for="pays">Pays</label>
+    <input
+      class="champ--pays"
+      id="pays"
+      name="pays"
+      type="text"
+      required
+    />
+  </div>
+  <p class="champ__erreur erreur"></p>
+</div>
+<div class="champ ctnValidation">
+    <div class="champ__conteneur">
+        <label class="champ__etiquette" for="Province ou État">Province ou État</label>
+        <input
+        class="champ--province-ou-état"
+        id="Province ou État"
+        name="Province ou État"
+        type="text"
+        required
+        />
+    </div>
+    <p class="champ__erreur erreur"></p>
+</div>
+<div class="champ ctnValidation">
+    <div class="champ__conteneur">
+        <label class="champ__etiquette" for="code postal">Code postal</label>
+        <input
+        class="champ--code-postal"
+        id="code postal"
+        name="code postal"
+        type="text"
+        required
+        />
+    </div>
+    <p class="champ__erreur erreur"></p>
+</div>
+        </main>
+        <footer>
+<div class="champ ctnValidation">
+    <div class="champ__conteneur">
+        <input class="champ--consentement" type="radio" id="consentement" name="consentement" required>
+        <label class="champ__etiquette" for="consentement">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et
+ressources disponibles.</label>
+    </div>
+    <p class="champ__erreur erreur"></p>
+</div>
+<div class="champ ctnValidation">
+    <div class="champ__conteneur">
+        <button class="champ--soumettre" id="commander" name="commander" type="submit">Commander</button>
+        </footer>      
+    </body>
+</html>
