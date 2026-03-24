@@ -4,6 +4,48 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Commander une brochure gratuite</title>
+        <style>
+            .screen-reader-only {
+  border: 0; /* Supprime toute bordure visible */
+  clip: rect(0 0 0 0); /* Decoupe la zone rendue a 0 pour ne rien afficher */
+  height: 1px; /* Conserve une taille minimale pour rester present dans l'arbre d'accessibilite */
+  width: 1px; /* Meme principe que height: element present mais quasi invisible */
+  margin: -1px; /* Retire l'impact visuel dans le flux de mise en page */
+  overflow: hidden; /* Cache tout contenu qui depasserait la boite */
+  padding: 0; /* Evite d'agrandir la zone masquee */
+  position: absolute; /* Sort l'element du flux normal pour ne pas perturber la mise en page */
+}
+
+.screen-reader-only.focusable:active, /* Rendre visible pendant l'activation clavier/souris */
+.screen-reader-only.focusable:focus {
+  /* Rendre visible quand l'element recoit le focus clavier */
+  clip: auto; /* Annule la decoupe pour afficher completement l'element */
+  height: auto; /* Restaure la hauteur normale pour une lecture visuelle */
+  margin: 0; /* Reinitialise la marge pour un positionnement normal */
+  overflow: visible; /* Laisse le contenu s'afficher entierement */
+  position: static; /* Replace l'element dans le flux pour qu'il apparaisse a l'ecran */
+  width: auto; /* Restaure la largeur normale */
+}
+ul{
+    list-style-type:none;
+    padding: 0;
+    display:flex;
+    gap: 1rem;
+}
+
+label {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    padding:0.55rem;
+    cursor: pointer;
+}
+input[type=radio]:checked + label {
+    outline: 2px solid blue;
+    outline-offset: 2px;
+}
+        </style>
     </head>
     <body>
         <header>
@@ -14,10 +56,26 @@
             <div class="champ ctnValidation">
                 <div class="champ__conteneur">
                     <label class="champ__etiquette" for="format">Format</label>
-                <button class="champ--format" id="format-imprimé" name="format" type="button">imprimé</button>
-                <button class="champ--format" id="format-pdf" name="format" type="button">PDF</button>
-                <button class="champ--format" id="format-epub" name="format" type="button">ePub</button>
-            </div>
+                <form action="">
+                    <fieldset>
+                        <legend>Format de la brochure</legend>
+                        <ul>
+                            <li>
+                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_imprime">
+                                <label for="brochure_imprime"> Imprimé </label>
+                            </li>
+                             <li>
+                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_PDF">
+                                <label for="brochure_pdf"> PDF </label>
+                            </li>
+                             <li>
+                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_ePub">
+                                <label for="brochure_epub"> ePub </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+                </div>
             <h2>INFORMATIONS DE CONTACT</h2>
             <div class="champ ctnValidation">
                 <div class="champ__conteneur">
