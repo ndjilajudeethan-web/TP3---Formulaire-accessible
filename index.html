@@ -4,6 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Commander une brochure gratuite</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <style>
             .screen-reader-only {
   border: 0; /* Supprime toute bordure visible */
@@ -65,11 +67,11 @@ input[name="brochure_choix"]:checked + label {
                             </li>
                              <li>
                                 <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_PDF">
-                                <label for="brochure_pdf"> PDF </label>
+                                <label for="brochure_PDF"> PDF </label>
                             </li>
                              <li>
                                 <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_ePub">
-                                <label for="brochure_epub"> ePub </label>
+                                <label for="brochure_ePub"> ePub </label>
                             </li>
                         </ul>
                     </fieldset>
@@ -79,7 +81,7 @@ input[name="brochure_choix"]:checked + label {
             <div class="champ ctnValidation">
                 <div class="champ__conteneur">
                     <fieldset>
-                        <legend>Prénom</legend>
+                        <legend>Nom</legend>
                     <input
                         class="champ--prenom"
                         id="Prenom"
