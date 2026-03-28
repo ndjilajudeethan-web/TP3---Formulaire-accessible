@@ -56,9 +56,9 @@ input[name="brochure_choix"]:checked + label {
         </header>
         <main id="contenu-principal">
             <h2>FORMAT DE LA BROCHURE</h2>
+            <form action="">
             <div class="champ ctnValidation">
                 <div class="champ__conteneur">
-                <form action="">
                     <fieldset>
                         <legend>Format de la brochure</legend>
                         <ul>
@@ -76,17 +76,17 @@ input[name="brochure_choix"]:checked + label {
                             </li>
                         </ul>
                     </fieldset>
-                </form>
                 </div>
+            </div>
             <h2>INFORMATIONS DE CONTACT</h2>
             <div class="champ ctnValidation">
                 <div class="champ__conteneur">
                     <fieldset>
                         <legend>Nom</legend>
                     <input
-                        class="champ--prenom"
-                        id="Nom"
-                        name="Prenom"
+                        class="champ--Nom"
+                        id="nom"
+                        name="Nom"
                         type="text"
                         required
                         pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+" 
@@ -101,9 +101,9 @@ input[name="brochure_choix"]:checked + label {
                     <fieldset>
                         <legend>Prénom</legend>
                     <input
-                        class="champ--nom"
-                        id="Prénom"
-                        name="Nom"
+                        class="champ--Prenom"
+                        id="prenom"
+                        name="Prenom"
                         type="text"
                         required
                         pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+"
@@ -186,8 +186,8 @@ input[name="brochure_choix"]:checked + label {
             <legend>Province ou État</legend>
         <input
         class="champ--province-ou-état"
-        id="Province-ou-État"
-        name="Province ou État"
+        id="province-ou-etat"
+        name="Province ou état"
         type="text"
         required
         pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+" 
@@ -214,8 +214,7 @@ input[name="brochure_choix"]:checked + label {
     </div>
     <p class="champ__erreur erreur"></p>
 </div>
-        </main>
-        <footer>
+<footer>
 <div class="champ ctnValidation">
     <div class="champ__conteneur">
         <input class="champ--consentement" type="checkbox" id="consentement" name="consentement" required>
@@ -227,6 +226,10 @@ ressources disponibles.</label>
 <div class="champ ctnValidation">
     <div class="champ__conteneur">
         <button class="champ--soumettre" id="commander" name="commander" type="submit">Commander</button>
-        </footer>      
-    </body>
+    </div>
+</div>    
+    </footer> 
+        </form>   
+        </main>
+        </body>
 </html>
