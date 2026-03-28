@@ -4,8 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Commander une brochure gratuite</title>
-        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
         <style>
             .screen-reader-only {
   border: 0; /* Supprime toute bordure visible */
@@ -63,15 +63,15 @@ input[name="brochure_choix"]:checked + label {
                         <legend>Format de la brochure</legend>
                         <ul>
                             <li>
-                                <input class="screen-reader-only" type="checkbox" name="brochure_choix" id="brochure_imprime" value="imprime">
+                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_imprime" value="imprime">
                                 <label for="brochure_imprime"> Imprimé </label>
                             </li>
                              <li>
-                                <input class="screen-reader-only" type="checkbox" name="brochure_choix" id="brochure_PDF" value="PDF">
+                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_PDF" value="PDF">
                                 <label for="brochure_PDF"> PDF </label>
                             </li>
                              <li>
-                                <input class="screen-reader-only" type="checkbox" name="brochure_choix" id="brochure_ePub" value="ePub">
+                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_ePub" value="ePub">
                                 <label for="brochure_ePub"> ePub </label>
                             </li>
                         </ul>
@@ -85,7 +85,7 @@ input[name="brochure_choix"]:checked + label {
                         <legend>Nom</legend>
                     <input
                         class="champ--prenom"
-                        id="Prenom"
+                        id="Nom"
                         name="Prenom"
                         type="text"
                         required
@@ -102,7 +102,7 @@ input[name="brochure_choix"]:checked + label {
                         <legend>Prénom</legend>
                     <input
                         class="champ--nom"
-                        id="Nom"
+                        id="Prénom"
                         name="Nom"
                         type="text"
                         required
@@ -218,7 +218,7 @@ input[name="brochure_choix"]:checked + label {
         <footer>
 <div class="champ ctnValidation">
     <div class="champ__conteneur">
-        <input class="champ--consentement" type="radio" id="consentement" name="consentement" required>
+        <input class="champ--consentement" type="checkbox" id="consentement" name="consentement" required>
         <label class="champ__etiquette" for="consentement">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et
 ressources disponibles.</label>
     </div>
