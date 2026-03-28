@@ -50,10 +50,11 @@ input[name="brochure_choix"]:checked + label {
         </style>
     </head>
     <body>
+        <a class="screen-reader-only focusable" href="#contenu-principal">Aller au contenu principal</a>
         <header>
 <h1>Commander un brochure gratuite</h1>
         </header>
-        <main>
+        <main id="contenu-principal">
             <h2>FORMAT DE LA BROCHURE</h2>
             <div class="champ ctnValidation">
                 <div class="champ__conteneur">
@@ -62,15 +63,15 @@ input[name="brochure_choix"]:checked + label {
                         <legend>Format de la brochure</legend>
                         <ul>
                             <li>
-                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_imprime" value="imprime">
+                                <input class="screen-reader-only" type="checkbox" name="brochure_choix" id="brochure_imprime" value="imprime">
                                 <label for="brochure_imprime"> Imprimé </label>
                             </li>
                              <li>
-                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_PDF" value="PDF">
+                                <input class="screen-reader-only" type="checkbox" name="brochure_choix" id="brochure_PDF" value="PDF">
                                 <label for="brochure_PDF"> PDF </label>
                             </li>
                              <li>
-                                <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_ePub" value="ePub">
+                                <input class="screen-reader-only" type="checkbox" name="brochure_choix" id="brochure_ePub" value="ePub">
                                 <label for="brochure_ePub"> ePub </label>
                             </li>
                         </ul>
@@ -88,6 +89,8 @@ input[name="brochure_choix"]:checked + label {
                         name="Prenom"
                         type="text"
                         required
+                        pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+" 
+                        title="Lettres seulement, tirets et espaces acceptés"
                     />
                     </fieldset>
                 </div>
@@ -103,6 +106,8 @@ input[name="brochure_choix"]:checked + label {
                         name="Nom"
                         type="text"
                         required
+                        pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+"
+                        title="Lettres seulement, tirets et espaces acceptés"
                     />
                     </fieldset>
                 </div>
@@ -133,6 +138,8 @@ input[name="brochure_choix"]:checked + label {
                         name="telephone"
                         type="tel"
                         required
+                        pattern="[\d\s\-\+\(\)]+" 
+                        title="Chiffres, espaces, tirets et parenthèses acceptés (ex: 514 555 0123)"
                     />
                     </fieldset>
                 </div>
@@ -149,6 +156,8 @@ input[name="brochure_choix"]:checked + label {
       name="adresse"
       type="text"
       required
+      pattern=".+" 
+      title="Veuillez entrer votre adresse"
     />
     </fieldset>
   </div>
@@ -164,6 +173,8 @@ input[name="brochure_choix"]:checked + label {
       name="pays"
       type="text"
       required
+      pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+" 
+      title="Lettres seulement"
     />
     </fieldset>
   </div>
@@ -175,10 +186,12 @@ input[name="brochure_choix"]:checked + label {
             <legend>Province ou État</legend>
         <input
         class="champ--province-ou-état"
-        id="Province ou État"
+        id="Province-ou-État"
         name="Province ou État"
         type="text"
         required
+        pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+" 
+        title="Lettres seulement"
         />
         </fieldset>
     </div>
@@ -190,10 +203,12 @@ input[name="brochure_choix"]:checked + label {
             <legend>Code postal</legend>
         <input
         class="champ--code-postal"
-        id="code postal"
+        id="code-postal"
         name="code postal"
         type="text"
         required
+        pattern="[A-Za-z]\d[A-Za-z][\s\-]?\d[A-Za-z]\d" 
+        title="Format canadien attendu (ex: G1A 1B2)"
         />
         </fieldset>
     </div>
