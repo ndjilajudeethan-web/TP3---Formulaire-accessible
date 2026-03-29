@@ -157,6 +157,38 @@ input[name="brochure_choix"]:checked + label {
     outline: 2px solid var(--couleur-tertiaire);
     outline-offset: 2px;
 }
+input[name="brochure_choix"]:focus + label {
+    outline: 2px solid red;
+    outline-offset: 2px;
+}
+input:focus{
+    border-color: var(--couleur-tertiaire);
+    outline: 2px solid red;
+    outline-offset: 2px;
+}
+textarea:focus,
+ul label:focus,
+button:focus,
+a:focus,
+img:focus {
+    border-color: var(--couleur-tertiaire);
+    outline: 2px solid red;
+    outline-offset: 2px;
+}
+ul label:hover{
+    color: var(--couleur-secondaire);
+    background-color: var(--couleur-primaire);
+}
+button:hover{
+    color: var(--couleur-secondaire);
+    background-color: var(--couleur-primaire);
+}
+a.screen-reader-only.focusable:hover {
+    color: var(--couleur-secondaire);
+    background-color: var(--couleur-primaire);
+}
+
+
 body {
     font-family: 'DM Sans', sans-serif;
     color: var(--couleur-primaire);
