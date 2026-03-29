@@ -15,28 +15,41 @@
         </header>
         <main id="contenu-principal">
             <form>
-            <h2>FORMAT DE LA BROCHURE</h2>
+            <h2>
+                <img class="brochure" src="images/icon-format-brochure.svg" alt="Brochure de la bibliothèque">
+                FORMAT DE LA BROCHURE</h2>
             <div class="champ ctnValidation">
                 <div class="champ__conteneur">
                     <fieldset>
+                        <legend>Choisissez le format de la brochure</legend>
                         <ul>
                             <li>
                                 <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_imprime" value="imprime">
-                                <label for="brochure_imprime"> Imprimé </label>
+                                <label for="brochure_imprime">
+                                    <img class="icone-imprime" src="images/icon-file-print.svg" alt="">
+                                     Imprimé </label>
                             </li>
                              <li>
                                 <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_PDF" value="PDF">
-                                <label for="brochure_PDF"> PDF </label>
+                                <label for="brochure_PDF">
+                                    <img class="icone-PDF" src="images/icon-file-pdf.svg" alt="">
+                                    PDF 
+                                </label>
                             </li>
                              <li>
                                 <input class="screen-reader-only" type="radio" name="brochure_choix" id="brochure_ePub" value="ePub">
-                                <label for="brochure_ePub"> ePub </label>
+                                <label for="brochure_ePub">
+                                    <img class="icone-ePub" src="images/icon-file-epub.svg" alt="">
+                                    ePub 
+                                </label>
                             </li>
                         </ul>
                     </fieldset>
                 </div>
             </div>
-            <h2>INFORMATIONS DE CONTACT</h2>
+            <h2>
+                <img class="contact" src="images/icon-contact.svg" alt="informations de contact">
+                INFORMATIONS DE CONTACT</h2>
             <div class="champ ctnValidation">
                 <div class="champ__conteneur">
                     <fieldset>
@@ -103,7 +116,9 @@
                 </div>
                 <p class="champ__erreur erreur"></p>
             </div>
-            <h2>INFORMATIONS POSTALES</h2>
+            <h2>
+                <img class="postales" src="images/icon-postal.svg" alt="informations postales">
+                INFORMATIONS POSTALES</h2>
             <div class="champ ctnValidation">
   <div class="champ__conteneur">    
     <fieldset>
@@ -183,7 +198,10 @@ ressources disponibles.</label>
 </div>
 <div class="champ ctnValidation">
     <div class="champ__conteneur champ__conteneur--soumettre">
-        <button class="champ--soumettre" id="commander" name="commander" type="submit">Commander</button>
+        <button class="champ--soumettre" id="commander" name="commander" type="submit">
+                    Commander<img class="icone-flèche" src="images/icon-arrow.svg" alt="commander">
+</button>
+
     </div>
     </div>
     </footer> 

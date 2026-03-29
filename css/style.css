@@ -123,23 +123,38 @@ img {
   position: static; /* Replace l'element dans le flux pour qu'il apparaisse a l'ecran */
   width: auto; /* Restaure la largeur normale */
 }
-ul{
-    list-style-type:none;
-    padding: 0;
-    display:flex;
-    gap: 1rem;
-}
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+} 
 ul label {
-    display: inline-block;
-    background-color: blue;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--couleur-secondaire);
+    color: var(--couleur-primaire);
     border-radius: 1rem;
     padding:0.55rem;
     cursor: pointer;
+    height: 8rem;
+    width: 100%;
+}
+.icone-imprime, .icone-PDF, .icone-ePub {
+    background-color: var(--couleur-secondaire);
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 4rem;
+    width: auto;
 }
 input[name="brochure_choix"]:checked + label {
-    outline: 2px solid blue;
+    outline: 2px solid var(--couleur-tertiaire);
     outline-offset: 2px;
 }
 body {
@@ -165,6 +180,9 @@ h1{
     margin: 0 0 5rem 0;
 }
 h2 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     font-family: 'DM Sans', sans-serif;
     color: var(--couleur-primaire);
     margin: 0 0 1rem 0;
@@ -186,12 +204,16 @@ fieldset {
     border: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 legend{
     margin-bottom: 0.5rem;
     font-size: smaller;
 }
 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--couleur-tertiaire);
     color: var(--couleur-secondaire);
     border: none;
@@ -200,20 +222,38 @@ button {
     font-size: 1rem;
     cursor: pointer;   
 }
+.icone-flèche {
+    margin-left: 0.5rem;
+    height: 1.25rem;
+    width: auto;
+    background-color: var(--couleur-tertiaire);
+}
+.champ__conteneur{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
 .champ__conteneur--soumettre {
 display: flex;
 flex-direction: row;
+align-items: center;
 justify-content: flex-end;
+width: 100%;
 }
 form {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     margin: auto 2rem;
-    padding: 4rem;
+    padding: 2rem;
     background-color: white;
     border-radius: 25px;
     margin-top: -5rem;
     margin-bottom: 3rem;
 }
+
 .champ__conteneur--consentement{
     display: flex;
     width: 100%;
@@ -221,4 +261,13 @@ form {
     align-items: flex-start;
     justify-content: space-between;
     gap: 1rem;
+    background-color: var(--couleur-secondaire);
+    padding: 1rem;
+    border-radius: 7px;
+}
+img{
+    background-color: var(--couleur-secondaire);
+    border-radius: 5px;
+    height: 2rem;
+    padding: 5px;
 }
