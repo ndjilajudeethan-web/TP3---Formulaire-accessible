@@ -27,9 +27,9 @@
 :root {
     /* Contraste texte/fond: #1a3c5e sur #f5f0e8 = 10:1 — AA et AAA réussis */
     /* Couleurs*/
-    --couleur-primaire: #1a3c5e;
+    --couleur-primaire: #1a1a4e;
     --couleur-secondaire: #f5f0e8;
-    --couleur-tertiaire: #8c6d4f;
+    --couleur-tertiaire: #6b4f35;
 }
 
 /* ------- Styles de base ------- */
@@ -179,8 +179,8 @@ ul label:hover{
     color: var(--couleur-secondaire);
     background-color: var(--couleur-primaire);
 }
-button:hover{
-    color: var(--couleur-secondaire);
+button:hover, .icone-flèche:hover{
+    color: white;
     background-color: var(--couleur-primaire);
 }
 a.screen-reader-only.focusable:hover {
@@ -247,7 +247,7 @@ button {
     align-items: center;
     justify-content: center;
     background-color: var(--couleur-tertiaire);
-    color: var(--couleur-secondaire);
+    color: white;
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 10px;
@@ -259,6 +259,7 @@ button {
     height: 1.25rem;
     width: auto;
     background-color: var(--couleur-tertiaire);
+    color: white;
 }
 .champ__conteneur{
     display: flex;
