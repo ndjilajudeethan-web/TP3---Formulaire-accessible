@@ -303,3 +303,32 @@ img{
     height: 2rem;
     padding: 5px;
 }
+@media (min-width: 48rem) {
+    form {
+        max-width: 48rem;
+        margin: auto 2rem;
+        margin-top: -5rem;
+    margin-bottom: 3rem;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+    ul label {
+        width: 14rem;
+    }
+    .champ__groupe {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+    }
+    .champ__groupe fieldset {
+        width: 21rem;
+    }
+}
