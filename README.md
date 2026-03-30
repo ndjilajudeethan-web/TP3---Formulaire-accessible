@@ -37,7 +37,7 @@ Exemple pour le cas d'un seul élément :
 </div>
 ```
 
-#### Ma note d'autoévaluation pour le critère HTML : Z
+#### Ma note d'autoévaluation pour le critère HTML : A
 
 ### CSS (6 points)
 
@@ -48,7 +48,7 @@ Exemple pour le cas d'un seul élément :
 - [ ] **Interactivité** — Lorsqu'un élément de formulaire reçoit le focus, son apparence doit changer pour le mettre en évidence. Le bouton de soumission et les hyperliens doivent avoir des états survol.
 - [ ] **Boutons radio** — Boutons radio visuellement cachés mais accessibles. Ce sont leurs étiquettes qui affichent les états normal, focus, hover et checked.
 
-#### Ma note d'autoévaluation pour le critère CSS : Z
+#### Ma note d'autoévaluation pour le critère CSS : B
 
 ### Accessibilité (4 points)
 
@@ -57,7 +57,7 @@ Exemple pour le cas d'un seul élément :
 - [ ] **Régions (landmarks)** — Utiliser les éléments HTML appropriés (`header`, `main`, `footer`) ou, si ce n'est pas possible, leur attribuer les rôles ARIA correspondants (`banner`, `main`, `contentinfo`).
 - [ ] **Contraste des couleurs** — Changez les couleurs de bases fournies dans la maquettes pour des couleurs personnalisées et ajoutez, en commentaire de la feuille de styles, le niveau de contraste entre les couleurs utilisées et les tests réussis avec l'outil [TPGi Color Contrast Checker](https://www.tpgi.com/color-contrast-checker/).
 
-#### Ma note d'autoévaluation pour le critère Accessibilité : Z
+#### Ma note d'autoévaluation pour le critère Accessibilité : A
 
 ### JavaScript (sera évalué dans le cours de programmation)
 
@@ -74,5 +74,6 @@ X sur 15
 ---
 
 ## Ajoutez vos commentaires sur le projet. Comment ça s'est passé? Quels aspects avez-vous trouvé facile ou difficile?
+J'ai trouvé le projet assez exigeant mais pas trop. Juste assez pour me mettre au défi. Les aspects des images et des labels et leurs intéractivitées etaient assez difficile.
 
-## Ma note d'autoévaluation pour le projet entier : Z
+## Ma note d'autoévaluation pour le projet entier : B
