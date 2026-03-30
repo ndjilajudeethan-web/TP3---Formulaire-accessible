@@ -25,7 +25,9 @@
 
 /* ------- Variables ------- */
 :root {
-    /* Contraste texte/fond: #1a3c5e sur #f5f0e8 = 10:1 — AA et AAA réussis */
+    /* Contraste texte/fond: #1A1A4E sur #f5f0e8 = 14.2:1 — AA et AAA réussis */
+    /* Contraste texte/fond: #1A1A4E sur #FFFFFF = 16.1:1 — AA et AAA réussis */
+    /*contraste texte/fond: #FFFFFF sur ##6B4F35 = 7.5:1 — AA réussi, AAA échoué */
     /* Couleurs*/
     --couleur-primaire: #1a1a4e;
     --couleur-secondaire: #f5f0e8;
