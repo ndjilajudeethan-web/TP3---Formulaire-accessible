@@ -311,6 +311,9 @@ img{
     height: 2rem;
     padding: 5px;
 }
+.icone-h2 {
+    background-color: var(--couleur-primaire);
+}
 /* ------- Requêtes média ------- */
 @media (min-width: 48rem) {
     /* Formulaire en ligne sur desktop, centré et avec un fond blanc */
